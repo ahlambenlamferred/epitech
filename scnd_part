@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+
+int main()
+
+{
+   
+	int n, c, row, t = 1;
+
+ 
+   	n=8 ;
+   
+ 
+  	for (row = n; row >=0 ; row--)
+	{
+    
+	for (c = 1; c <= n - row; c++)
+ 
+		 printf(" ");
+
+   
+		 t = row;
+
+  
+	for (c = 1; c <= row; c++)
+	{
+       
+		 if(t==row) printf("*") ;
+  
+	    	 else printf(" ");
+    
+	  
+     	 t++;
+   
+	 }
+
+    
+	t = t - 2;
+
+ 
+	for (c = 1 ; c < row; c++)
+	{
+     
+		 if(t==row) printf("*") ;
+    
+		 else printf(" ");
+
+		 
+		t--;
+ 
+	   }
+
+    
+		printf("\n");
+ 
+	 }
+
+}
